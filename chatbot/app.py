@@ -6,12 +6,12 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-#os.environ["OPENAI_API_KEY"]=str(os.getenv("OPENAI_API_KEY"))
-os.environ["OPENAI_API_KEY"]="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"
+os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+
 ## Langmith tracking
 os.environ["LANGCHAIN_TRACING_V2"]="true"
-#os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_API_KEY"]="ls__93bc6442480d4fc8a7f586403ea7ddcc"
+os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
+
 
 ## Prompt Template
 print(str(os.getenv("OPENAI_API_KEY")))
